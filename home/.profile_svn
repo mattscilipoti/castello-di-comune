@@ -1,0 +1,2 @@
+alias sd="svn diff -x -w | vim --cmd 'syn on' -"
+alias ss="svn status"

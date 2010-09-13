@@ -1,0 +1,45 @@
+# ADD LOCAL CONFIGURATION HERE
+[user]
+	name = Matt Scilipoti
+	email = matt@scilipoti.name
+
+[github]
+	user = mattscilipoti
+	token = 06a25ef95e2a5997fd523243688d9419
+
+[diff]
+  renamelimit = 0
+  tool = kdiff3
+
+[gc]
+  auto = 1
+  
+[merge]
+  tool = kdiff3
+  log = true
+  prompt = false
+
+	
+# DO NOT EDIT BELOW THIS LINE
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	
+[core]
+	excludesfile = ~/.gitignore
+	
+[alias]
+	ci = commit
+  c = commit -m
+  a = add
+  di = diff
+  dic = diff --cached
+  pl = pull
+  ps = push
+  plre = pull --rebase
+	st = status
+  out = log origin..HEAD
+	svnpull = svn rebase
+	svnpush = svn dcommit
+
