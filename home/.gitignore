@@ -21,3 +21,9 @@ setup-ruby-dev
 .cache
 .local/share/Trash
 *.log
+
+#osx
+.DS_Store
+
+#IDE
+.idea/
