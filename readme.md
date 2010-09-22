@@ -1,4 +1,7 @@
-# Castle-of-town (common)
+# castello-di-comune
+
+    translate en castello-di-comune 
+    -> castle-of-town (common)
 
 My common config files.  
 
