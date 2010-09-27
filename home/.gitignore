@@ -12,7 +12,7 @@ firefox_profile_backup
 
 #dev
 .gem
-.RubyMine10/system/caches
+.rvmrc
 develop
 setup-ruby-dev
 
@@ -27,3 +27,4 @@ setup-ruby-dev
 
 #IDE
 .idea/
+*.swp
