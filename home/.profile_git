@@ -8,6 +8,7 @@ alias gd='git diff '
 alias gm='git merge '
 alias gmm='git merge master' 
 alias gcom='git checkout master'
+alias gpom='git push origin master'
 alias svnpull='git svn rebase'
 alias svnpush='git svn dcommit'
 
