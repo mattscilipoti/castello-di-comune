@@ -19,6 +19,9 @@
   log = true
   prompt = false
 
+[push]
+  # only push current branch
+  default = tracking
 	
 # DO NOT EDIT BELOW THIS LINE
 [color]
