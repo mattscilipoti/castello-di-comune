@@ -44,5 +44,12 @@
 	st = status
   out = log origin..HEAD
 	svnpull = svn rebase
-	svnpush = svn dcommit
+  svnpush = svn dcommit
+  # commits not pushed
+  unpushed = log HEAD --not --remotes
+  # commits in current branch, but not compared branch
+  # `git convergence other_branch`
+  divergence = log HEAD --root
 
+[achievement]
+	upload = true
