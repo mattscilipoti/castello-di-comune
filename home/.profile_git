@@ -20,3 +20,8 @@ hitch() {
 alias unhitch='hitch -u'
 # Uncomment to persist pair info between terminal instances
 # hitch
+
+# git-achievements
+export PATH="$PATH:/Users/matt/bin/git-achievements"
+alias git="git-achievements"
+
