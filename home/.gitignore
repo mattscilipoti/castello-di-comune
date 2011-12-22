@@ -13,7 +13,6 @@ firefox_profile_backup
 #dev
 .bundle
 .gem
-.rvmrc
 develop
 setup-ruby-dev
 
