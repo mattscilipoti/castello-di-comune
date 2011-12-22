@@ -1,0 +1,1 @@
+export MAVEN_OPTS="-Xmx512m -Xms128m -XX:MaxPermSize=512m"
