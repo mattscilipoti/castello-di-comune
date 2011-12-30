@@ -25,3 +25,25 @@ alias unhitch='hitch -u'
 export PATH="$PATH:/Users/matt/bin/git-achievements"
 alias git="git-achievements"
 
+
+# Prompt:
+# see: https://gist.github.com/1419347
+
+function git_branch { 
+	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/';
+}
+
+function git_status {
+	git diff --quiet HEAD &>/dev/null
+	[[ $? == 1 ]] && tput setaf 1 || tput setaf 2
+}
+
+# tput +
+# sgr 0 = default color;
+# setaf = foreground; setab = background;
+# 0 = black; 1 = red; 2 = green; 3 = yellow; 4 = blue; 5 = purple; 6 = cyan; 7 = light gray;
+
+# prompt becomes red if git working directory has modified files
+# otherwise it's purple
+
+export PS1="\W\$(git_status)\]\$(git_branch)\[\$(tput sgr 0)$ ";
