@@ -49,6 +49,7 @@ function git_status {
 # 0 = black; 1 = red; 2 = green; 3 = yellow; 4 = blue; 5 = purple; 6 = cyan; 7 = light gray;
 
 # prompt becomes red if git working directory has modified files
-# otherwise it's purple
+# otherwise it's green
 
-export PS1="\W\$(git_status)\]\$(git_branch)\[\$(tput sgr 0)$ ";
+## INFO: wrap colors in \[foo\] to fix to line wrap issues.
+export PS1="\W\[\$(git_status)\]\$(git_branch)\[\$(tput sgr 0)\]$ ";
