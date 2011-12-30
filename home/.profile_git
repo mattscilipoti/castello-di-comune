@@ -12,6 +12,11 @@ alias gpom='git push origin master'
 alias svnpull='git svn rebase'
 alias svnpush='git svn dcommit'
 
+ # auto complete bash aliases
+ # see: http://blog.ericgoodwin.com/2008/4/10/auto-completion-with-git
+complete -o default -o nospace -F _git_branch gb
+complete -o default -o nospace -F _git_checkout gco
+
 # hitch
 hitch() {
   command hitch "$@"
