@@ -1,0 +1,9 @@
+--ignore-dir=tmp
+--type-add=css=.sass
+--type-add=css=.scss
+--type-add=ruby=.rake
+
+--type-set=cucumber=.feature
+--type-set=haml=.haml
+--type-set=mustache=.mustache
+--type-set=rack=.ru
